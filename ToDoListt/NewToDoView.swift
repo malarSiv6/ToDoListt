@@ -11,7 +11,7 @@ struct NewToDoView: View {
     
     @State var title: String
     @State var isImportant: Bool
-    
+    @Binding var ToDoItems: [ToDoItem]
     var body: some View {
         VStack {
             Text("Task title: ")
